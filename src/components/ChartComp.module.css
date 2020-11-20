@@ -1,0 +1,19 @@
+.graphContainer {
+    width: 60vw;
+    height: 40vh;
+    background: white;
+    padding: 6px 4px 2px 4px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 10px 0px -5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 10px 0px -5px rgba(0,0,0,0.3);
+    box-shadow: 0px 10px 0px -5px rgba(0,0,0,0.3);
+    
+    /*untuk otomatis di tengah*/
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .graphContainer {
+        width: 80vw;
+    }
+}

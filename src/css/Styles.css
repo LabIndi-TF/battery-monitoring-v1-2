@@ -1,0 +1,115 @@
+/*
+Note : Prioritas mencoba center sesuatu
+1. enclose dengan <div className="text-center"> (default dari Bootstrap)
+2. kalau cuma elemen text tunggal, text-align: center
+3. buat kelas baru dengan margin: auto
+4. baru main padding dll
+*/
+
+/* Stylesheet general */
+* {
+    box-sizing: border-box;
+  }
+  
+  .body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .html{
+    border: 15px solid #000;
+  }
+    
+  .h1 {
+    margin: 0px;
+    padding: 10px;
+    color: #333;
+    font-size: 26px;
+    background: #ddd;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+
+/* ./layouts/PrimaryLayout.js */
+.primaryContainer {
+  padding:0rem;
+}
+
+/* ./pages/* */
+.centeredH1{
+  text-align: center;
+}
+
+.centeredText{
+  text-align: center;
+}
+
+.centeredThing{
+  margin: auto;
+}
+
+/* ./pages/LoginPage.js */
+.big-title {
+  text-align: center;
+  font-size:35px;
+}
+
+.left-title {
+  font-size:35px;
+}
+
+.p-3Container {
+  float: none;
+  padding:1rem!important;
+  margin: 0 auto;
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.jumbotron-bg{
+  background-color:#55AAFF;
+}
+
+/* ./pages/EngUnitSetup.js */
+.SetupContainer {
+  margin: 0 auto;
+  width:10%;
+}
+
+/* ./ui/Header.js */
+.textNavLink{
+  color:#FFFFFF;
+}
+
+/* ./src/components/ConfigContent.js */
+.tdCentered{
+  text-align:center;
+}
+
+.big-device{
+  font-size:35px;
+  color:#55AAFF;
+}
+
+/* IO Panel ./src/components/HomeContent.js*/
+.rotateTheSlider{
+  cursor: pointer;
+  width: 100px !important;
+  height: 100px;
+  z-index: 200;
+  width:50px; 
+  -webkit-transform:rotate(270deg);
+  -moz-transform:rotate(270deg);
+  -o-transform:rotate(270deg);
+  -ms-transform:rotate(270deg);
+  transform:rotate(270deg); 
+}
